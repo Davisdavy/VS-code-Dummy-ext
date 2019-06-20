@@ -24,7 +24,7 @@
           "scope": "resource",
           "description": "Default language set (dictionary/region) used for spelling."
         },
-        "spellright.documentTypes": {
+        "spellmd.documentTypes": {
           "type": "array",
           "default": [
             "markdown",
@@ -34,13 +34,13 @@
           "scope": "resource",
           "description": "Document types for which spelling will be turned ON by default."
         },
-        "spellright.configurationUpdate": {
+        "spellmd.configurationUpdate": {
           "type": "boolean",
           "default": true,
           "scope": "resource",
           "description": "Enable/disable automatic update of configuration from GUI operations."
         },
-        "spellright.configurationScope": {
+        "spellmd.configurationScope": {
           "type": "string",
           "enum": [
             "user",
@@ -50,31 +50,31 @@
           "scope": "resource",
           "description": "Scope for automatic configuration update."
         },
-        "spellright.groupDictionaries": {
+        "spellmd.groupDictionaries": {
           "type": "boolean",
           "default": true,
           "scope": "resource",
           "description": "Enable/disable grouping of dictionaries by language."
         },
-        "spellright.recheckOnSave": {
+        "spellmd.recheckOnSave": {
           "type": "boolean",
           "default": true,
           "scope": "resource",
           "description": "Enable/disable spelling of entire document on save."
         },
-        "spellright.statusBarIndicator": {
+        "spellmd.statusBarIndicator": {
           "type": "boolean",
           "default": true,
           "scope": "resource",
           "description": "Enable/disable language & status indicator switch in status bar."
         },
-        "spellright.suggestionsInHints": {
+        "spellmd.suggestionsInHints": {
           "type": "boolean",
           "default": true,
           "scope": "resource",
           "description": "Enable/disable including suggested corrections in hints."
         },
-        "spellright.addToSystemDictionary": {
+        "spellmd.addToSystemDictionary": {
           "type": "boolean",
           "default": false,
           "scope": "resource",
@@ -92,7 +92,7 @@
           "scope": "resource",
           "description": "Regular expressions to eliminate from spelling per document type."
         },
-        "spellright.ignoreFiles": {
+        "spellmd.ignoreFiles": {
           "type": "array",
           "default": [
             "**/.gitignore",
@@ -101,7 +101,7 @@
           "scope": "resource",
           "description": "List of file patterns ignored during spelling."
         },
-        "spellright.notificationClass": {
+        "spellmd.notificationClass": {
           "type": "string",
           "enum": [
             "error",
@@ -113,43 +113,43 @@
           "scope": "resource",
           "description": "Assign class of diagnostic messages produced by SpellRight."
         },
-        "spellright.notificationClassByParser": {
+        "spellmd.notificationClassByParser": {
           "type": "object",
           "default": {},
           "scope": "resource",
           "description": "Assign class of diagnostic messages produced by SpellRight per parser."
         },
-        "spellright.spellContext": {
+        "spellmd.spellContext": {
           "type": "string",
           "default": "body comments strings",
           "scope": "resource",
           "description": "Decide which syntactic parts of documents are spelled by default."
         },
-        "spellright.spellContextByClass": {
+        "spellmd.spellContextByClass": {
           "type": "object",
           "default": {},
           "scope": "resource",
           "description": "Decide which syntactic parts of documents are spelled per document type."
         },
-        "spellright.languageContext": {
+        "spellmd.languageContext": {
           "type": "object",
           "default": {},
           "scope": "resource",
           "description": "Decide which language is used to spell syntactic parts of documents."
         },
-        "spellright.languageContextByClass": {
+        "spellmd.languageContextByClass": {
           "type": "object",
           "default": {},
           "scope": "resource",
           "description": "Decide which language is used to spell syntactic parts of documents per document type."
         },
-        "spellright.parserByClass": {
+        "spellmd.parserByClass": {
           "type": "object",
           "default": {},
           "scope": "resource",
           "description": "Decide which parser and its configuration to use per document type."
         },
-        "spellright.latexSpellParameters": {
+        "spellmd.latexSpellParameters": {
           "type": "array",
           "default": [
             "author",
@@ -180,7 +180,7 @@
           "scope": "resource",
           "description": "List of LaTeX commands that will have the parameter list spell checked."
         },
-        "spellright.useDocumentSymbolsInCode": {
+        "spellmd.useDocumentSymbolsInCode": {
           "type": "boolean",
           "default": true,
           "scope": "resource",
@@ -190,32 +190,32 @@
     },
     "commands": [
       {
-        "command": "spellright.configurationUpdate",
-        "title": "SpellRight: Configuration Update"
+        "command": "spellmd.configurationUpdate",
+        "title": "SPELLMD: Configuration Update"
       },
       {
-        "command": "spellright.selectDictionary",
-        "title": "SpellRight: Select Dictionary (Language)"
+        "command": "spellmd.selectDictionary",
+        "title": "SPELLMD: Select Dictionary (Language)"
       },
       {
-        "command": "spellright.setCurrentTypeOFF",
-        "title": "SpellRight: Turn OFF for Current Document Type"
+        "command": "spellmd.setCurrentTypeOFF",
+        "title": "SPELLMD: Turn OFF for Current Document Type"
       },
       {
-        "command": "spellright.openWorkspaceDictionary",
-        "title": "SpellRight: Open Workspace Dictionary File"
+        "command": "spellmd.openWorkspaceDictionary",
+        "title": "SPELLMD: Open Workspace Dictionary File"
       },
       {
-        "command": "spellright.openUserDictionary",
-        "title": "SpellRight: Open User Dictionary File"
+        "command": "spellmd.openUserDictionary",
+        "title": "SPELLMD: Open User Dictionary File"
       },
       {
-        "command": "spellright.addFromSelectionToWorkspaceDictionary",
-        "title": "SpellRight: Add Selection to Workspace Dictionary"
+        "command": "spellmd.addFromSelectionToWorkspaceDictionary",
+        "title": "SPELLMD: Add Selection to Workspace Dictionary"
       },
       {
-        "command": "spellright.addFromSelectionToUserDictionary",
-        "title": "SpellRight: Add Selection to User Dictionary"
+        "command": "spellmd.addFromSelectionToUserDictionary",
+        "title": "SPELLMD: Add Selection to User Dictionary"
       }
     ],
     "keybindings": []
@@ -246,20 +246,5 @@
     "os-locale": "^2.0.0",
     "path": "^0.12.7",
     "xregexp": "^3.2.0"
-  },
-  "icon": "icon.png",
-  "license": "SEE LICENSE IN LICENSE.md",
-  "homepage": "https://github.com/bartosz-antosik/vscode-spellright",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/bartosz-antosik/vscode-spellright.git"
-  },
-  "bugs": {
-    "url": "https://github.com/bartosz-antosik/vscode-spellright/issues"
-  },
-  "__metadata": {
-    "id": "f6e8f06b-e4dc-40e4-83d6-afd7ef0f3e44",
-    "publisherId": "2274a5e4-f24b-4cd7-9d0b-d00ca3d481b1",
-    "publisherDisplayName": "Bartosz Antosik"
   }
 }
