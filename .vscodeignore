@@ -1,0 +1,17 @@
+
+.backup/**
+.helpers/**
+.media/**
+.output/**
+.samples/**
+.research/**
+.test/**
+.vscode/**
+.gitignore
+.eslintrc.json
+lib/bin/node-spellchecker/**
+jsconfig.json
+GPATH
+GRTAGS
+GTAGS
+makefile
